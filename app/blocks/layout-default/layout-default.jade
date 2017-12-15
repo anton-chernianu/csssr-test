@@ -3,6 +3,7 @@ include /../node_modules/jade-injected/jade-injected
 include ../page/page
 include ../header/header
 include ../profile/profile
+include ../skills/skills
 include ../scripts/scripts
 
 doctype html
@@ -12,4 +13,5 @@ html(lang='ru')
 		+page
 			+header
 			+profile
+			+skills
 			+scripts(['app.min.js'])

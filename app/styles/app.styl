@@ -10,8 +10,18 @@ body__bg_color = #797979
 main__bg_color = #ecd09e
 
 body
+	font-size 16px
 	background-color body__bg_color
-	
+	padding-top 2px
+	line-height 23px
+	letter-spacing -.53px
+
+p
+	PTSansRegular()
+	padding-top 2px
+	line-height 23px
+	letter-spacing -.53px
+
 main
 	max-width 1000px
 	width 100%
@@ -20,6 +30,18 @@ main
 	background-image url('../images/main-bg.png')
 	background-repeat repeat
 	padding 62px 0 
+
+.title
+	PTSansBold()
+	font-size 24px
+	letter-spacing -.05px
+	padding-bottom 6px
+
+.text
+	PTSansRegular()
+	padding-top 2px
+	line-height 23px
+	letter-spacing -.53px
 
 import('../blocks/**/*')
 

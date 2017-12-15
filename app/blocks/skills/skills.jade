@@ -1,0 +1,10 @@
+mixin skills()
+	+b.SECTION.skills&attributes(attributes)
+		+e.container
+			p.title Расскажите о себе чекбоксами
+			p.text Отметьте чекбоксами пункты, которые соответствуют вашим 	скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+			+e.grid
+				+e.UL.list
+					+e.LI.item
+						input.chekbox(id="check-bem" type="checkbox")
+						label(for="check-bem") БЭМ/OOCSS
