@@ -6,5 +6,80 @@ mixin skills()
 			+e.grid
 				+e.UL.list
 					+e.LI.item
-						input.chekbox(id="check-bem" type="checkbox")
-						label(for="check-bem") БЭМ/OOCSS
+						.checkbox
+							input.checkbox__input(id="check-bem" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-bem") БЭМ/OOCSS
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-pug" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-pug") Pug (Jade)
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-preprocess" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-preprocess") Stylus/LESS/SASS
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-svg" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-svg") Работаю с SVG
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-semantic" type="checkbox")
+							label.checkbox__label(for="check-semantic") Верстаю семантично
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-accessiability" type="checkbox")
+							label.checkbox__label(for="check-accessiability") Accessiability (A11Y)
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-es" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-es") ES2015/ES2016
+				+e.UL.list
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-gulp" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-gulp") Gulp/GRUNT
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-webpack" type="checkbox")
+							label.checkbox__label(for="check-webpack") Webpack
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-webgl" type="checkbox")
+							label.checkbox__label(for="check-webgl") Дружу с WebGL
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-jquery" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-jquery") JQuery
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-angular" type="checkbox")
+							label.checkbox__label(for="check-angular") Знаю/изучаю Angular
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-react" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-react") Знаю/изучаю React
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-nodejs" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-nodejs") Знаю/изучаю Node.js
+				+e.UL.list
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-git" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-git") Использую Git
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-eyes" type="checkbox" checked="checked")
+							label.checkbox__label(for="check-eyes") С глазомером всё ок
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-blog" type="checkbox")
+							label.checkbox__label(for="check-blog") Читаю blog.csssr.ru
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-laziness" type="checkbox")
+							label.checkbox__label(for="check-laziness") Я ленивый(-ая)
+					+e.LI.item
+						.checkbox
+							input.checkbox__input(id="check-english" type="checkbox")
+							label.checkbox__label(for="check-english") У меня хороший английский
