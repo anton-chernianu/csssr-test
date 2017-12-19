@@ -1,0 +1,52 @@
+.checkbox
+	padding-bottom 10px
+
+	&__label
+		PTSansBold()
+		font-size 21px
+		letter-spacing .05px
+		
+	&__input:not(:checked),
+	&__input:checked
+		position absolute
+		left -9999px
+		
+	&__input:not(:checked) + &__label,
+	&__input:checked + &__label
+		position relative
+		padding-left 25px
+		cursor pointer
+		user-select none
+		
+	&__input:not(:checked) + &__label:before,
+	&__input:checked + &__label:before
+		position absolute
+		top 0
+		left 0 
+		width 19px
+		height 18px
+		content ''
+		background-image url('http://chernianu.com/project/checkbox/checkbox.png')
+		background-repeat no-repeat
+		
+	&__input:not(:checked) + &__label:after,
+	&__input:checked + &__label:after
+		position absolute
+		z-index 10
+		top -9px
+		left 4px
+		width 21px
+		height 27px
+		line-height .8
+		content ''
+		background-image url('http://chernianu.com/project/checkbox/check.png')
+		background-repeat no-repeat
+		transition all .2s
+		
+	&__input:not(:checked) + &__label:after
+		opacity 0
+		transform scale(0)
+		
+	&__input:checked + &__label:after 
+		opacity 1
+		transform scale(1)

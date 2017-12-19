@@ -1,0 +1,4 @@
+mixin checkbox(id, name, checked)
+	+b.checkbox&attributes(attributes)
+		+e.INPUT.input(id=id type="checkbox" checked=checked)
+		+e.LABEL.label(for=id) #{name}
