@@ -8,6 +8,8 @@ import('helpers/svg-size')
 // Main Setting
 body__bg_color = #797979
 main__bg_color = #ecd09e
+link__color = #1f5f97
+link__color_hover = #d27548
 
 body
 	font-size 16px
@@ -16,30 +18,36 @@ body
 	line-height 23px
 	letter-spacing -.53px
 
-p
-	PTSansRegular()
-	padding-top 2px
-	line-height 23px
-	letter-spacing -.53px
-
 main
 	max-width 1000px
 	width 100%
 	margin 0 auto
+	padding 60px 0 
 	background-color: main__bg_color
 	background-image url('../images/main-bg.png')
 	background-repeat repeat
-	padding 60px 0 
+	
+p
+	padding-top 2px
+	PTSansRegular()
+	line-height 23px
+	letter-spacing -.53px
+
+a 
+	color link__color
+	transition-duration .5s
+	&:hover
+		color link__color_hover
 
 .title
+	padding-bottom 6px
 	PTSansBold()
 	font-size 24px
 	letter-spacing -.05px
-	padding-bottom 6px
 
 .text
-	PTSansRegular()
 	padding-top 2px
+	PTSansRegular()
 	line-height 23px
 	letter-spacing -.53px
 

@@ -5,7 +5,7 @@ mixin skills()
 			p.title Расскажите о себе чекбоксами
 			p.text Отметьте чекбоксами пункты, которые соответствуют вашим 	скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
 			+e.grid
-				+e.UL.list._first
+				+e.UL.list
 					+e.LI.item
 						+checkbox('check-bem', 'БЭМ/OOCSS', true)
 					+e.LI.item
@@ -16,11 +16,11 @@ mixin skills()
 						+checkbox('check-svg', 'Работаю с SVG', true)
 					+e.LI.item
 						+checkbox('check-semantic', 'Верстаю семантично', true)
-					+e.LI.item
+					+e.LI.itemd
 						+checkbox('check-accessiability', 'Accessiability (A11Y)', false)
 					+e.LI.item
 						+checkbox('check-es', 'ES2015/ES2016', true)
-				+e.UL.list._second
+				+e.UL.list
 					+e.LI.item
 						+checkbox('check-gulp', 'Gulp/GRUNT', true)
 					+e.LI.item
@@ -41,7 +41,10 @@ mixin skills()
 					+e.LI.item
 						+checkbox('check-eyes', 'С глазомером всё ок', true)
 					+e.LI.item
-						+checkbox('check-readblog', 'Читаю blog.csssr.ru', false)
+						+b.checkbox
+							+e.INPUT.input(id="check-read" type="checkbox")
+							+e.LABEL.label(for="check-read") Читаю 
+								a(target="_blank" href="http://blog.csssr.ru") blog.csssr.ru
 					+e.LI.item
 						+checkbox('check-laziness', 'Я ленивый(-ая)', false)
 					+e.LI.item
