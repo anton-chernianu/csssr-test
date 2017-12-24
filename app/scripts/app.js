@@ -4,3 +4,14 @@ import $ from 'jquery';
 $(() => {
 	svg4everybody();
 });
+
+// NoUISlider Setting
+var directionSlider = document.querySelector('.skill-range');
+
+noUiSlider.create(directionSlider, {
+	start: 20,
+	range: {
+		'min': 0,
+		'max': 100
+	}
+});
