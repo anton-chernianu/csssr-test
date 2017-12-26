@@ -9,8 +9,16 @@ noUiSlider.create(directionSlider, {
 	}
 });
 
-// import svg4everybody from 'svg4everybody';
-// import $ from 'jquery';
-// $(() => {
-// 	svg4everybody();
-// });
+// TextArea Autosize
+var textarea = document.querySelector('textarea');
+
+textarea.addEventListener('keydown', autosize);
+             
+function autosize(){
+  var el = this;
+  setTimeout(function(){
+    el.style.cssText = 'height:auto; padding:0';
+    el.style.cssText = '-moz-box-sizing:content-box';
+    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+  },0);
+}
