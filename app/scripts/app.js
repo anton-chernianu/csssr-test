@@ -2,7 +2,7 @@
 var directionSlider = document.querySelector('.skill-range');
 
 noUiSlider.create(directionSlider, {
-	start: 30,
+	start: 48.4,
 	range: {
 		'min': 0,
 		'max': 100

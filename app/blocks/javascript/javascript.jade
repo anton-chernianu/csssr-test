@@ -4,4 +4,10 @@ mixin javascript()
 	+b.SECTION.javascript&attributes(attributes)
 		+e.container
 			p.title Уровень владения JavaScript
-			+skill-range
+			+e.container._range
+				+skill-range
+				+e.skill-names
+					+e.skill-name._low Не владею
+					+e.skill-name._mid Использую готовые решения
+					+e.skill-name._high Использую готовые решения<br> и умею их переделывать
+					+e.skill-name._exp Пишу сложный JS с нуля

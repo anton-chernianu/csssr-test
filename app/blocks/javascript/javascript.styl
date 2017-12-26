@@ -2,4 +2,39 @@
 	padding-top 50px
 	&__container
 		content_container()
-		
+		&_range
+			margin-top 24px
+			padding-right 5px
+			padding-left 0
+	&__skill-names
+		position relative
+		margin-top 24px
+		height 40px
+	&__skill-name
+		position absolute
+		height 100%
+		PTSansBold()
+		font-size 15px
+		line-height 20px
+		letter-spacing -1.1px
+		&:before
+			position absolute
+			margin-top -25px
+			width 3px
+			height 25px
+			content ''
+			background #000
+		&_low
+			left 0
+		&_mid
+			left 18.8%
+			&:before
+				height 10px
+		&_high
+			left 48.3%
+			&:before
+				height 10px
+		&_exp
+			right 0
+			&:before
+				right 0
