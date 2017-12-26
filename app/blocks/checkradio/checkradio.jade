@@ -1,0 +1,4 @@
+mixin checkradio(id, name, checked)
+	+b.checkradio&attributes(attributes)
+		+e.INPUT.input(id=id type="radio" checked=checked)
+		+e.LABEL.label(for=id) #{name}
