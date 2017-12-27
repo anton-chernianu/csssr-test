@@ -37,6 +37,13 @@ function autosize(){
   },0);
 }
 
+// Date Input Mask
+var dateInput = document.querySelector('#date-input');
+var dateMask = {
+  mask: '00-00-0000'
+};
+var date = new IMask(dateInput, dateMask);
+
 });
 
 

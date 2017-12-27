@@ -1,6 +1,8 @@
+//- Value Setting
+-var date_input = "12-27-2017"; 
 mixin date()
 	+b.SECTION.date&attributes(attributes)
 		+e.container
 			+e.item
 				+e.LABEL.label(for="date-input") Дата Заполнения
-				+e.INPUT.input(id="date-input" type="date" value="2016-01-01") 
+				+e.INPUT.input(id="date-input" type="text" value="#{date_input}") 
