@@ -1,0 +1,45 @@
+.date
+	&__container
+		content_container()
+		padding-top 68px
+	&__item
+		display flex
+		align-items flex-end
+	&__label
+		PTSansBold()
+		font-size 23px
+		white-space nowrap 
+		letter-spacing -.4px
+	&__input
+		position relative
+		padding-left 24px
+		CourierNew()
+		font-size 29px
+		letter-spacing .5px
+		background none
+		border none
+		&:after
+			position absolute
+			left 16px
+			bottom 2px
+			width 206px
+			height 3px	
+			content ''
+			background #000
+@media (max-width: 720px)
+	.date
+		&__item
+			flex-flow column wrap
+			align-items stretch
+@media (max-width: 480px)
+	.date
+		&__container
+			padding-top 20px
+		&__item
+			width 180px
+		&__input
+			padding-left 0
+			font-size 20px
+			&:after
+				left 0
+		

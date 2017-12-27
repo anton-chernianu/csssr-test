@@ -15,8 +15,6 @@
 			background none
 			background-image url('../images/slide-icon.png')
 			background-repeat no-repeat
-			// border 8px solid transparent
-			// border-top 16px solid #000
 		&:after
 			display none
 	&__line
@@ -25,3 +23,17 @@
 		width 100%
 		height 3px
 		background #000
+@media (max-width: 720px)
+	.skill-range
+		width 20px
+		height 200px
+		.noUi-horizontal, .noUi-handle
+			&:before
+				top 11px
+				left 0
+				transform rotate(30deg)
+		&__line
+			top 0
+			right 0
+			width 3px
+			height 100%

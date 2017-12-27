@@ -1,16 +1,26 @@
 .skills
-	
 	&__container
 		content_container()
 		padding-top 30px
-		
 	&__grid
 		padding-top 27px
 		display flex
-		flex-flow row nowrap
-	
+		flex-flow row wrap
 	&__list
 		width (100%/3)
-		
 		&_third
 			padding-left 10px
+@media (max-width: 920px)
+		.skills
+			&__list
+				&_third
+					padding-left 0
+@media (max-width: 720px)
+		.skills
+			&__list
+				margin-bottom 10px
+				width 50%
+@media (max-width: 480px)
+		.skills
+			&__list
+				width 100%
