@@ -43,8 +43,8 @@
 		<title>Chernianu Anton | CSSSR</title>
 		<meta name="description" content="">
 		<meta name="keywords" content="">
-		<link href="/assets/styles/nouislider.min.css" rel="stylesheet">
-		<link href="/assets/styles/app.min.css" rel="stylesheet">
+		<link href="assets/styles/nouislider.min.css" rel="stylesheet">
+		<link href="assets/styles/app.min.css" rel="stylesheet">
 	</head>
 	<main>
 
@@ -52,7 +52,7 @@
 			<header class="header">
 				<div class="header__container">
 					<div class="logo">
-						<a href="/">
+						<a target="_blank" href="https://csssr.ru">
 							<img src="assets/images/logo.png" alt="Космический фронтенд – CSSSR" />
 						</a>
 					</div>
@@ -169,7 +169,7 @@
 							</li>
 							<li class="skills__item">
 								<div class="checkbox">
-									<input id="check-webgl" type="checkbox" checked="checked" class="checkbox__input" />
+									<input id="check-webgl" type="checkbox" class="checkbox__input" />
 									<label for="check-webgl" class="checkbox__label">Дружу с WebGL</label>
 								</div>
 							</li>
@@ -257,7 +257,7 @@
 					<p class="title title_about">Расскажите о себе словами</p>
 					<p class="text">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати,
 						<br> будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
-					<textarea class="textarea textarea_about">Ну-ууу-уу...</textarea>
+					<textarea class="textarea textarea_about">Про компанию CSSSR я узнал совершенно случайно, я слушал подкаcт Frontend Weekend в котором принимал участие Дмитрий Чекин, в интервью мне очень понравилось как рассказывали о компании, о ее проектах и команде. Я не помню, говорили ли в интервью о наличии в команде специалистов из других стран помимо России, но если такие есть, хотелось бы попробовать присоединится к вашей команде и быть в ней полезным, в данный момент я занимаюсь версткой и разработкой сайтов на Wordpress. Сейчас я постепенно повышаю свой уровень в JS и хочу глубже разобраться в технологиях связанных с frontend разработкой.</textarea>
 				</div>
 			</section>
 			<section class="future">
@@ -280,13 +280,15 @@
 				<div class="date__container">
 					<div class="date__item">
 						<label for="date-input" class="date__label">Дата Заполнения</label>
-						<input id="date-input" type="text" value="12-27-2017" class="date__input" />
+						<div class="date__input-block">
+							<input id="date-input" type="text" value="27.12.2017" class="date__input" />
+						</div>
 					</div>
 				</div>
 			</section>
-			<script src="/assets/scripts/nouislider.min.js"></script>
-			<script src="/assets/scripts/imask.js"></script>
-			<script src="/assets/scripts/app.min.js"></script>
+			<script src="assets/scripts/nouislider.min.js"></script>
+			<script src="assets/scripts/imask.js"></script>
+			<script src="assets/scripts/app.min.js"></script>
 		</body>
 	</main>
 

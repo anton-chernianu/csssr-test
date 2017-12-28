@@ -14,7 +14,6 @@ link__color_hover = #d27548
 body
 	font-size 16px
 	background-color body__bg_color
-	padding-top 2px
 	line-height 23px
 	letter-spacing -.53px
 
@@ -22,7 +21,8 @@ main
 	max-width 1000px
 	width 100%
 	margin 0 auto
-	padding 60px 0 
+	padding 62px 0
+	padding-bottom 72px
 	background-color: main__bg_color
 	background-image url('../images/main-bg.png')
 	background-repeat repeat
@@ -59,15 +59,17 @@ a
 	letter-spacing .5px
 	line-height: 60px;
 	width 100%
-	height 180px
+	min-height 180px
 	padding 0 7px
 	background none
 	background-image url('../images/textarea-bg.png')
 	background-size 100%
 	background-position 100% 13px
+	background-attachment local
 	border none
 	resize none
-	overflow hidden
+	// overflow hidden
+	text-align justify
 	&_about
 		margin-top 20px
 @media (max-width: 720px)

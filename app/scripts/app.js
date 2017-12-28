@@ -27,6 +27,7 @@ if(widthSize > 720){
 
 // TextArea Autosize
 var textarea = document.querySelector('textarea');
+textarea.style = "height:"+textarea.scrollHeight+"px";
 textarea.addEventListener('keydown', autosize);
 function autosize(){
   var el = this;
@@ -40,7 +41,10 @@ function autosize(){
 // Date Input Mask
 var dateInput = document.querySelector('#date-input');
 var dateMask = {
-  mask: '00-00-0000'
+    mask: Date,
+    min: new Date(1900, 0, 1),
+    max: new Date(2018, 0, 1),
+    lazy: false
 };
 var date = new IMask(dateInput, dateMask);
 
